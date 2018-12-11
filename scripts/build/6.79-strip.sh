@@ -15,9 +15,8 @@ for LIB in $save_lib; do
     objcopy --add-gnu-debuglink=$LIB.dbg $LIB
 done
 
-save_usrlib="libquadmath.so.0.0.0 libstdc++.so.6.0.24
-             libmpx.so.2.0.1 libmpxwrappers.so.2.0.1 libitm.so.1.0.0
-             libcilkrts.so.5.0.0 libatomic.so.1.2.0"
+save_usrlib="libquadmath.so.0.0.0 libstdc++.so.6.0.25
+             libitm.so.1.0.0 libatomic.so.1.2.0"
 
 cd /usr/lib
 
@@ -28,6 +27,8 @@ for LIB in $save_usrlib; do
 done
 
 unset LIB save_lib save_usrlib
+
+exec /tools/bin/bash
 
 # strip
 /tools/bin/find /usr/lib -type f -name \*.a \

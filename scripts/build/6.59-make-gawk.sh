@@ -19,8 +19,8 @@ make install
 
 # install docs
 if [ $LFS_DOCS -eq 1 ]; then
-  mkdir -v /usr/share/doc/gawk-4.2.0
-  cp    -v doc/{awkforai.txt,*.{eps,pdf,jpg}} /usr/share/doc/gawk-4.2.0
+  mkdir -v /usr/share/doc/gawk-4.2.1
+  cp    -v doc/{awkforai.txt,*.{eps,pdf,jpg}} /usr/share/doc/gawk-4.2.1
 fi
 
 # cleanup

@@ -20,19 +20,19 @@ tar -xf /sources/Python-*.tar.gz -C /tmp/ \
 make
 # install tool
 make install
-chmod -v 755 /usr/lib/libpython3.6m.so
+chmod -v 755 /usr/lib/libpython3.7m.so
 chmod -v 755 /usr/lib/libpython3.so
 
 # install the documentation
 if [ $LFS_DOCS -eq 1 ]; then
     # Install documentation
-    install -v -dm755 /usr/share/doc/python-3.6.4/html
+    install -v -dm755 /usr/share/doc/python-3.7.0/html
     # Extract archive
     tar --strip-components=1  \
         --no-same-owner       \
         --no-same-permissions \
-        -C /usr/share/doc/python-3.6.4/html \
-        -xvf /sources/python-3.6.4-docs-html.tar.bz2
+        -C /usr/share/doc/python-3.7.0/html \
+        -xvf /sources/python-3.7.0-docs-html.tar.bz2
 fi
 
 # cleanup

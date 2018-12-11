@@ -7,7 +7,7 @@ sh /tools/run-prepare.sh
 
 # execute rest as root
 exec sudo -E -u root /bin/sh - <<EOF
-#  change ownership
+# change ownership
 chown -R root:root $LFS/tools
 # prevent "bad interpreter: Text file busy"
 sync

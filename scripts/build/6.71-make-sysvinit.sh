@@ -11,7 +11,7 @@ tar -xf /sources/sysvinit-*.tar.bz2 -C /tmp/ \
   && pushd /tmp/sysvinit
 # apply a patch that removes several programs installed by other packages,
 # clarifies a message, and fixes a compiler warning
-patch -Np1 -i /sources/sysvinit-2.88dsf-consolidated-1.patch
+patch -Np1 -i /sources/sysvinit-2.90-consolidated-1.patch
 # compile and install
 make -C src
 make -C src install

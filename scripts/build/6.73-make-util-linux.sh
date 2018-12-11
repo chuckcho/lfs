@@ -11,8 +11,10 @@ tar -xf /sources/util-linux-*.tar.xz -C /tmp/ \
   && pushd /tmp/util-linux
 
 mkdir -pv /var/lib/hwclock
+# remove the earlier created symlinks
+rm -vf /usr/include/{blkid,libmount,uuid}
 ./configure ADJTIME_PATH=/var/lib/hwclock/adjtime \
-    --docdir=/usr/share/doc/util-linux-2.31.1     \
+    --docdir=/usr/share/doc/util-linux-2.32.1     \
     --disable-chfn-chsh                           \
     --disable-login                               \
     --disable-nologin                             \

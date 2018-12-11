@@ -12,12 +12,13 @@ tar -xf /sources/coreutils-*.tar.xz -C /tmp/ \
 
 # The following patch fixes this non-compliance and other
 # internationalization-related bugs.
-patch -Np1 -i /sources/coreutils-8.29-i18n-1.patch
+patch -Np1 -i /sources/coreutils-8.30-i18n-1.patch
 
 # Suppress a test which on some machines can loop forever
 sed -i '/test.lock/s/^/#/' gnulib-tests/gnulib.mk
 
 # Now prepare Coreutils for compilation:
+autoreconf -fiv
 FORCE_UNSAFE_CONFIGURE=1 ./configure \
   --prefix=/usr                      \
   --enable-no-install-program=kill,uptime

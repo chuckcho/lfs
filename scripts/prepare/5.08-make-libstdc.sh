@@ -18,7 +18,7 @@ tar -xf gcc-*.tar.xz -C /tmp/ \
      --disable-nls                   \
      --disable-libstdcxx-threads     \
      --disable-libstdcxx-pch         \
-     --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/7.3.0 \
+     --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/8.2.0 \
   && make \
   && make install \
   && popd \

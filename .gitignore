@@ -1,2 +1,6 @@
 /.idea/
-/toolchain/
+/toolchain/*.tar.gz
+/toolchain/*.tar.xz
+/toolchain/*.tar.bz2
+/toolchain/*.patch
+/toolchain/md5sums

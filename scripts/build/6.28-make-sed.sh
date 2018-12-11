@@ -26,8 +26,8 @@ if [ $LFS_TEST -eq 1 ]; then make check; fi
 # Install the package and its documentation:
 make install
 if [ $LFS_DOCS -eq 1 ]; then
-  install -d -m755           /usr/share/doc/sed-4.4
-  install -m644 doc/sed.html /usr/share/doc/sed-4.4
+  install -d -m755           /usr/share/doc/sed-4.5
+  install -m644 doc/sed.html /usr/share/doc/sed-4.5
 fi
 
 # Cleanup

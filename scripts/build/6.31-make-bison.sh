@@ -9,7 +9,7 @@ tar -xf /sources/bison-*.tar.xz -C /tmp/ \
   && mv /tmp/bison-* /tmp/bison \
   && pushd /tmp/bison
 
-./configure --prefix=/usr --docdir=/usr/share/doc/bison-3.0.4
+./configure --prefix=/usr --docdir=/usr/share/doc/bison-3.0.5
 make
 make install
 # cleanup

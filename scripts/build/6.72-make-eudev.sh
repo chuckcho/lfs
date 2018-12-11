@@ -9,8 +9,6 @@ tar -xf /sources/eudev-*.tar.gz -C /tmp/ \
   && mv /tmp/eudev-* /tmp/eudev \
   && pushd /tmp/eudev
 
-# apply fixes
-sed -r -i 's|/usr(/bin/test)|\1|' test/udev-test.pl
 # add a workaround to prevent the /tools directory from being hard coded
 # into Eudev binary files library locations
 cat > config.cache << EOF

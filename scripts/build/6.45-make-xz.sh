@@ -12,7 +12,7 @@ tar -xf /sources/xz-*.tar.xz -C /tmp/ \
 
 ./configure --prefix=/usr      \
     --disable-static           \
-    --docdir=/usr/share/doc/xz-5.2.3
+    --docdir=/usr/share/doc/xz-5.2.4
 make
 if [ $LFS_TEST -eq 1 ]; then make check; fi
 make install

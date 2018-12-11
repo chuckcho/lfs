@@ -10,6 +10,8 @@ tar -xf /sources/texinfo-*.tar.xz -C /tmp/ \
   && mv /tmp/texinfo-* /tmp/texinfo \
   && pushd /tmp/texinfo
 
+# fix a file that creates a lot of failures in the regression checks
+sed -i '5481,5485 s/({/(\\{/' tp/Texinfo/Parser.pm
 ./configure --prefix=/usr --disable-static
 make
 if [ $LFS_TEST -eq 1 ]; then make check; fi

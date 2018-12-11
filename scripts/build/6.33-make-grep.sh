@@ -11,7 +11,7 @@ tar -xf /sources/grep-*.tar.xz -C /tmp/ \
 
 ./configure --prefix=/usr --bindir=/bin
 make
-if [ $LFS_TEST -eq 1 ]; then make check; fi
+if [ $LFS_TEST -eq 1 ]; then make -k check; fi
 make install
 # cleanup
 popd \

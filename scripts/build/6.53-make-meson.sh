@@ -14,7 +14,8 @@ tar -xf /sources/meson-*.tar.gz -C /tmp/ \
 python3 setup.py build
 
 # Install package
-python3 setup.py install
+python3 setup.py install --root=dest
+cp -rv dest/* /
 
 # cleanup
 popd \

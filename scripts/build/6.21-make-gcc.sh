@@ -34,6 +34,7 @@ SED=sed                               \
              --enable-languages=c,c++ \
              --disable-multilib       \
              --disable-bootstrap      \
+             --disable-libmpx         \
              --with-system-zlib
 
 # Compile the package:
@@ -45,7 +46,11 @@ ulimit -s 32768
 
 # Test the results, but do not stop at errors:
 if [ $LFS_TEST -eq 1 ]; then
-   make -k check || true
+   # Remove one test known to cause a problem:
+   rm ../gcc/testsuite/g++.dg/pr83239.C
+   chown -Rv nobody .
+   su nobody -s /bin/bash -c "PATH=$PATH make -k check" || true
+
    # To receive a summary of the test suite results, run:
    ../contrib/test_summary | grep -A7 Summ
 fi
@@ -63,7 +68,7 @@ ln -sv gcc /usr/bin/cc
 # Add a compatibility symlink to enable building programs with
 # Link Time Optimization (LTO):
 install -v -dm755 /usr/lib/bfd-plugins
-ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/7.3.0/liblto_plugin.so \
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/8.2.0/liblto_plugin.so \
         /usr/lib/bfd-plugins/
 
 # Now that our final toolchain is in place, it is important to again

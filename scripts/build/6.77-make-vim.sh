@@ -16,14 +16,16 @@ sed -i '/call/{s/split/xsplit/;s/303/492/}' src/testdir/test_recover.vim
 # prepare Vim for compilation:
 ./configure --prefix=/usr
 make
-if [ $LFS_TEST -eq 1 ]; then make -j1 test &> vim-test.log; fi
+if [ $LFS_TEST -eq 1 ]; then
+  LANG=en_US.UTF-8 make -j1 test &> vim-test.log
+fi
 make install
 # create symlink for vi
 ln -sv vim /usr/bin/vi
 for L in /usr/share/man/{,*/}man1/vim.1; do
     ln -sv vim.1 $(dirname $L)/vi.1
 done
-ln -sv ../vim/vim80/doc /usr/share/doc/vim-8.0.586
+ln -sv ../vim/vim81/doc /usr/share/doc/vim-8.1
 # 6.70.2. Configuring Vim
 cat > /etc/vimrc <<"EOF"
 " Begin /etc/vimrc

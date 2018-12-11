@@ -12,7 +12,7 @@ tar -xf /sources/procps-ng-*.tar.xz -C /tmp/ \
 ./configure --prefix=/usr                   \
   --exec-prefix=                            \
   --libdir=/usr/lib                         \
-  --docdir=/usr/share/doc/procps-ng-3.3.12  \
+  --docdir=/usr/share/doc/procps-ng-3.3.15  \
   --disable-static                          \
   --disable-kill
 # compile, test and install

@@ -14,6 +14,11 @@ tar -xf /sources/gettext-*.tar.xz -C /tmp/ \
 # suppress two invocations of test-lock which on some machines can loop forever
 sed -i '/^TESTS =/d' gettext-runtime/tests/Makefile.in &&
 sed -i 's/test-lock..EXEEXT.//' gettext-tools/gnulib-tests/Makefile.in
+
+# fix a configuration file
+sed -e '/AppData/{N;N;p;s/\.appdata\./.metainfo./}' \
+      -i gettext-tools/its/appdata.loc
+
 # prepare for compilation
 ./configure --prefix=/usr \
   --disable-static        \

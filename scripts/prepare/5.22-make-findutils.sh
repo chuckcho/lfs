@@ -11,6 +11,9 @@ echo "Required disk space: 35 MB"
 tar -xf findutils-*.tar.gz -C /tmp/ \
   && mv /tmp/findutils-* /tmp/findutils \
   && pushd /tmp/findutils \
+  && sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' gl/lib/*.c \
+  && sed -i '/unistd/a #include <sys/sysmacros.h>' gl/lib/mountlist.c \
+  && echo "#define _IO_IN_BACKUP 0x100" >> gl/lib/stdio-impl.h \
   && ./configure --prefix=/tools \
   && make \
   && if [ $LFS_TEST -eq 1 ]; then make check; fi || true \

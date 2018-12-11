@@ -3,18 +3,16 @@ set -e
 echo "Continue with chroot environment.."
 
 # configure system
-sh /tools/7.2-make-lfs-bootscripts.sh
-sh /tools/7.4-manage-devices.sh
-sh /tools/7.5-configure-network.sh
-sh /tools/7.6-configure-systemv.sh
-sh /tools/7.x-configure-bash.sh
+for f in /tools/7.*.sh; do
+  sh "$f"
+done
 
 # make system bootable
-sh /tools/8.2-create-fstab.sh
-sh /tools/8.3-make-linux-kernel.sh
-sh /tools/8.4-setup-grub.sh
+for f in /tools/8.*.sh; do
+  sh "$f"
+done
 
 # end
-sh /tools/9.1-the-end.sh
+sh /tools/9.01-the-end.sh
 
 exit

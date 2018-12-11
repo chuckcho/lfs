@@ -10,17 +10,17 @@ tar -xf /sources/glibc-*.tar.xz -C /tmp/ \
  && pushd /tmp/glibc
 
 # 6.9.1. Installation of Glibc
-patch -Np1 -i /sources/glibc-2.27-fhs-1.patch
+patch -Np1 -i /sources/glibc-2.28-fhs-1.patch
 ln -sfv /tools/lib/gcc /usr/lib
 
 # Determine the GCC include directory and create a symlink for LSB
 # compliance. Additionally, for x86_64, create a compatibility
 # symlink required for the dynamic loader to function correctly:
 case $(uname -m) in
-    i?86)    GCC_INCDIR=/usr/lib/gcc/$(uname -m)-pc-linux-gnu/7.3.0/include
+    i?86)    GCC_INCDIR=/usr/lib/gcc/$(uname -m)-pc-linux-gnu/8.2.0/include
             ln -sfv ld-linux.so.2 /lib/ld-lsb.so.3
     ;;
-    x86_64) GCC_INCDIR=/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include
+    x86_64) GCC_INCDIR=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include
             ln -sfv ../lib/ld-linux-x86-64.so.2 /lib64
             ln -sfv ../lib/ld-linux-x86-64.so.2 /lib64/ld-lsb-x86-64.so.3
     ;;
@@ -100,7 +100,7 @@ EOF
 
 # 6.9.2.2. Adding time zone data
 mkdir /tmp/tzdata \
-  && tar -xf /sources/tzdata2017b.tar.gz -C /tmp/tzdata \
+  && tar -xf /sources/tzdata2017e.tar.gz -C /tmp/tzdata \
   && pushd /tmp/tzdata
 
 ZONEINFO=/usr/share/zoneinfo

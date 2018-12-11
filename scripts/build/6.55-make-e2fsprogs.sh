@@ -13,9 +13,6 @@ tar -xf /sources/e2fsprogs-*.tar.gz -C /tmp/ \
 
 mkdir -v build
 cd build
-LIBS=-L/tools/lib                     \
-CFLAGS=-I/tools/include               \
-PKG_CONFIG_PATH=/tools/lib/pkgconfig  \
 ../configure --prefix=/usr            \
     --bindir=/bin                     \
     --with-root-prefix=""             \

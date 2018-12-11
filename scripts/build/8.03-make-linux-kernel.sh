@@ -24,14 +24,14 @@ make
 # installation
 make modules_install
 # copy kernel image
-cp -iv arch/x86/boot/bzImage /boot/vmlinuz-4.15.3-lfs-8.2
+cp -iv arch/x86/boot/bzImage /boot/vmlinuz-4.18.5-lfs-8.3
 # copy symbols
-cp -iv System.map /boot/System.map-4.15.3
+cp -iv System.map /boot/System.map-4.18.5
 # copy original configuration
-cp -iv .config /boot/config-4.15.3
+cp -iv .config /boot/config-4.18.5
 # install documentation
-install -d /usr/share/doc/linux-4.15.3
-cp -r Documentation/* /usr/share/doc/linux-4.15.3
+install -d /usr/share/doc/linux-4.18.5
+cp -r Documentation/* /usr/share/doc/linux-4.18.5
 
 # 8.3.2. configure linux module load order
 install -v -m755 -d /etc/modprobe.d

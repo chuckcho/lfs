@@ -26,6 +26,12 @@ if [ $LFS_TEST -eq 1 ]; then make test || true; fi
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 make MANSUFFIX=ssl install
 
+# If desired, install the documentation:
+if [ $LFS_DOCS -eq 1 ]; then
+  mv -v /usr/share/doc/openssl /usr/share/doc/openssl-1.1.0i
+  cp -vfr doc/* /usr/share/doc/openssl-1.1.0i
+fi
+
 # cleanup
 popd \
   && rm -rf /tmp/openssl

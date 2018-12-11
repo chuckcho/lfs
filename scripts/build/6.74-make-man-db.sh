@@ -10,7 +10,7 @@ tar -xf /sources/man-db-*.tar.xz -C /tmp/ \
   && pushd /tmp/man-db
 
 ./configure --prefix=/usr                        \
-            --docdir=/usr/share/doc/man-db-2.8.1 \
+            --docdir=/usr/share/doc/man-db-2.8.4 \
             --sysconfdir=/etc                    \
             --disable-setuid                     \
             --enable-cache-owner=bin             \
