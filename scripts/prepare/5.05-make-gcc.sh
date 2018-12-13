@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 echo "Building gcc.."
-echo "Approximate build time: 8.9 SBU"
+echo "Approximate build time: 14.3 SBU"
 echo "Required disk space: 2.2 GB"
 
 # 5.5. Pass 1 GCC package contains the GNU compiler collection,

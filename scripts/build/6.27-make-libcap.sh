@@ -2,9 +2,9 @@
 set -e
 echo "Building Libcap.."
 echo "Approximate build time: less than 0.1 SBU"
-echo "Required disk space: 1.3 MB"
+echo "Required disk space: 1.4 MB"
 
-# 6.26. The Libcap package implements the user-space interfaces to the
+# 6.27. The Libcap package implements the user-space interfaces to the
 # POSIX 1003.1e capabilities available in Linux kernels. These
 # capabilities are a partitioning of the all powerful root privilege
 # into a set of distinct privileges

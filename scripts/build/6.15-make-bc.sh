@@ -2,7 +2,7 @@
 set -e
 echo "Building Bc.."
 echo "Approximate build time: 0.1 SBU"
-echo "Required disk space: 3.7 MB"
+echo "Required disk space: 4.1 MB"
 
 # 6.15. The Bc package contains an arbitrary precision numeric
 # processing language.

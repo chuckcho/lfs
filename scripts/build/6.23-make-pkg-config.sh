@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 echo "Building pkg config.."
-echo "Approximate build time: 0.3 SBU"
-echo "Required disk space: 28 MB"
+echo "Approximate build time: 0.4 SBU"
+echo "Required disk space: 30 MB"
 
-# 6.22. Pkg-config package contains a tool for passing the include path
+# 6.23. Pkg-config package contains a tool for passing the include path
 # and/or library paths to build tools during the configure and make file execution
 tar -xf /sources/pkg-config-*.tar.gz -C /tmp/ \
   && mv /tmp/pkg-config-* /tmp/pkg-config \

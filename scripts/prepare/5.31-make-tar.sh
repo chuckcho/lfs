@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building tar.."
-echo "Approximate build time: 0.3 SBU"
-echo "Required disk space: 34 MB"
+echo "Approximate build time: 0.4 SBU"
+echo "Required disk space: 36 MB"
 
 # 5.32. Tar package contains an archiving program
 tar -xf tar-*.tar.xz -C /tmp/ \

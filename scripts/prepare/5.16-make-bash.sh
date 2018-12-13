@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building bash.."
-echo "Approximate build time:  0.4 SBU"
-echo "Required disk space: 61 MB"
+echo "Approximate build time: 0.4 SBU"
+echo "Required disk space: 63 MB"
 
 # 5.16. Bash package contains the Bourne-Again SHell
 tar -xf bash-*.tar.gz -C /tmp/ \

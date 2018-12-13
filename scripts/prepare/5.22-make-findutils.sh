@@ -2,7 +2,7 @@
 set -e
 echo "Building findutils.."
 echo "Approximate build time: 0.3 SBU"
-echo "Required disk space: 35 MB"
+echo "Required disk space: 36 MB"
 
 # 5.22. Findutils package contains programs to find files. These programs are
 # provided to recursively search through a directory tree and to create,

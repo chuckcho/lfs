@@ -2,7 +2,7 @@
 set -e
 echo "Building man-db.."
 echo "Approximate build time: 0.4 SBU"
-echo "Required disk space: 30 MB"
+echo "Required disk space: 33 MB"
 
 # 6.74. Man-DB package contains programs for finding and viewing man pages
 tar -xf /sources/man-db-*.tar.xz -C /tmp/ \

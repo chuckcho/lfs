@@ -2,7 +2,7 @@
 set -e
 echo "Building Xz.."
 echo "Approximate build time: 0.2 SBU"
-echo "Required disk space: 15 MB"
+echo "Required disk space: 16 MB"
 
 # 6.45. Xz package contains programs for compressing and decompressing files.
 # It provides capabilities for the lzma and the newer xz compression formats

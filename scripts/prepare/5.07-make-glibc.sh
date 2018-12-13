@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building glibc.."
-echo "Approximate build time: 4.3 SBU"
-echo "Required disk space: 823 MB"
+echo "Approximate build time: 4.7 SBU"
+echo "Required disk space: 882 MB"
 
 # 5.7. Glibc package contains the main C library. This library provides
 # the basic routines for allocating memory, searching directories, opening

@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building Python.."
-echo "Approximate build time: 1.2 SBU"
-echo "Required disk space: 354 MB"
+echo "Approximate build time: 1.3 SBU"
+echo "Required disk space: 390 MB"
 
 # 6.51. The Python 3 package contains the Python development environment. It is useful
 # for object-oriented programming, writing scripts, prototyping large programs or

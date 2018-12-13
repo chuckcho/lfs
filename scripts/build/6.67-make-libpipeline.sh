@@ -2,7 +2,7 @@
 set -e
 echo "Building libpipeline.."
 echo "Approximate build time: 0.1 SBU"
-echo "Required disk space: 8.1 MB"
+echo "Required disk space: 8.2 MB"
 
 # 6.67. Libpipeline package contains a library for manipulating
 # pipelines of subprocesses in a flexible and convenient way

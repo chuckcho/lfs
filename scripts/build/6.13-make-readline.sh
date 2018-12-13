@@ -2,7 +2,7 @@
 set -e
 echo "Building readline.."
 echo "Approximate build time: 0.1 SBU"
-echo "Required disk space: 15 MB"
+echo "Required disk space: 18 MB"
 
 # 6.13. Readline package is a set of libraries that offers command-line
 # editing and history capabilities

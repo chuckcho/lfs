@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building vim.."
-echo "Approximate build time: 1.1 SBU"
-echo "Required disk space: 128 MB"
+echo "Approximate build time: 1.6 SBU"
+echo "Required disk space: 169 MB"
 
 # 6.77. Vim package contains a powerful text editor
 tar -xf /sources/vim-*.tar.bz2 -C /tmp/ \

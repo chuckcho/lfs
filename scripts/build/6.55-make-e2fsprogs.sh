@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building e2fsprogs.."
-echo "Approximate build time: 3.3 SBU"
-echo "Required disk space: 58 MB"
+echo "Approximate build time: 1.6 SBU"
+echo "Required disk space: 96 MB"
 
 # 6.55. The E2fsprogs package contains the utilities for handling
 # the ext2 file system. It also supports the ext3 and ext4 journaling

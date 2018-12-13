@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building gettext.."
-echo "Approximate build time: 2.4 SBU"
-echo "Required disk space: 201 MB"
+echo "Approximate build time: 2.6 SBU"
+echo "Required disk space: 210 MB"
 
 # 6.47. Gettext package contains utilities for internationalization and
 # localization. These allow programs to be compiled with NLS

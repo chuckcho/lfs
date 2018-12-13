@@ -2,7 +2,7 @@
 set -e
 echo "Building sysklogd.."
 echo "Approximate build time: less than 0.1 SBU"
-echo "Required disk space: 0.7 MB"
+echo "Required disk space: 0.6 MB"
 
 # 6.70. The Sysklogd package contains programs for logging system
 # messages, such as those given by the kernel when unusual things

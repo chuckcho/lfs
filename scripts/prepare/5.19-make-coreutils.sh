@@ -2,7 +2,7 @@
 set -e
 echo "Building Coreutils.."
 echo "Approximate build time: 0.7 SBU"
-echo "Required disk space: 139 MB"
+echo "Required disk space: 147 MB"
 
 # 5.19. The Coreutils package contains utilities for showing and
 # setting the basic system characteristics.

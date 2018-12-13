@@ -2,7 +2,7 @@
 set -e
 echo "Building grub.."
 echo "Approximate build time: 0.8 SBU"
-echo "Required disk space: 144 MB"
+echo "Required disk space: 147 MB"
 
 # 6.62. GRUB package contains the GRand Unified Bootloader
 tar -xf /sources/grub-*.tar.xz -C /tmp/ \

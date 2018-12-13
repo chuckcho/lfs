@@ -2,7 +2,7 @@
 set -e
 echo "Building procps-ng.."
 echo "Approximate build time: 0.1 SBU"
-echo "Required disk space: 15 MB"
+echo "Required disk space: 17 MB"
 
 # 6.54. The Procps-ng package contains programs for monitoring processes.
 tar -xf /sources/procps-ng-*.tar.xz -C /tmp/ \

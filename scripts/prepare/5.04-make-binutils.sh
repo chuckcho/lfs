@@ -2,7 +2,7 @@
 set -e
 echo "Building binutils.."
 echo "Approximate build time: 1 SBU"
-echo "Required disk space: 547 MB"
+echo "Required disk space: 576 MB"
 
 # 5.4 Binutils package contains a linker, an assembler, and other
 #  tools for handling object files

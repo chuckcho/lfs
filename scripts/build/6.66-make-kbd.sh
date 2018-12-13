@@ -2,7 +2,7 @@
 set -e
 echo "Building kbd.."
 echo "Approximate build time: 0.1 SBU"
-echo "Required disk space: 29 MB"
+echo "Required disk space: 30 MB"
 
 # 6.66. Kbd package contains key-table files, console fonts, and
 # keyboard utilities

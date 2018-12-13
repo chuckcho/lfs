@@ -4,7 +4,7 @@ echo "Building bzip2.."
 echo "Approximate build time: less than 0.1 SBU"
 echo "Required disk space: 2.3 MB"
 
-# 6.21. Bzip2 package contains programs for compressing and decompressing files.
+# 6.22. Bzip2 package contains programs for compressing and decompressing files.
 # Compressing text files with bzip2 yields a much better compression percentage
 # than with the traditional gzip
 tar -xf /sources/bzip2-*.tar.gz -C /tmp/ \

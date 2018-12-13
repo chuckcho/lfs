@@ -2,9 +2,9 @@
 set -e
 echo "Building Attr.."
 echo "Approximate build time: less than 0.1 SBU"
-echo "Required disk space: 3.3 MB"
+echo "Required disk space: 4.2 MB"
 
-# 6.24. The Attr package contains utilities to administer the extended
+# 6.25. The Attr package contains utilities to administer the extended
 # attributes on filesystem objects
 tar -xf /sources/attr-*.tar.gz -C /tmp/ \
   && mv /tmp/attr-* /tmp/attr \

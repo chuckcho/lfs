@@ -2,7 +2,7 @@
 set -e
 echo "Building IPRoute2.."
 echo "Approximate build time: 0.2 SBU"
-echo "Required disk space: 12 MB"
+echo "Required disk space: 13 MB"
 
 # 6.65. IPRoute2 package contains programs for basic and advanced
 # IPV4-based networki

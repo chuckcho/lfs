@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building libstdc.."
-echo "Approximate build time: 0.4 SBU"
-echo "Required disk space: 752 MB"
+echo "Approximate build time: 0.5 SBU"
+echo "Required disk space: 803 MB"
 
 # 5.8. Libstdc++ is the standard C++ library. It is needed for
 # the correct operation of the g++ compile

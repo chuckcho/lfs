@@ -2,9 +2,9 @@
 set -e
 echo "Building Shadow.."
 echo "Approximate build time: 0.2 SBU"
-echo "Required disk space: 43 MB"
+echo "Required disk space: 46 MB"
 
-# 6.28. The Shadow package contains programs for handling passwords
+# 6.20. The Shadow package contains programs for handling passwords
 # in a secure way.
 tar -xf /sources/shadow-*.tar.xz -C /tmp/ \
   && mv /tmp/shadow-* /tmp/shadow \

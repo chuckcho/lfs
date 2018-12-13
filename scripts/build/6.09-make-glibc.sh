@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building glibc.."
-echo "Approximate build time: 20 SBU"
-echo "Required disk space: 2.0 Gb"
+echo "Approximate build time: 24 SBU"
+echo "Required disk space: 2.8 GB"
 
 # 6.9. Glibc package contains the main C library
 tar -xf /sources/glibc-*.tar.xz -C /tmp/ \

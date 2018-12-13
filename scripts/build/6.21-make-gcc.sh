@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 echo "Building GCC.."
-echo "Approximate build time: 81 SBU (with tests)"
-echo "Required disk space: 3.1 GB"
+echo "Approximate build time: 92 SBU (with tests)"
+echo "Required disk space: 4.0 GB"
 
-# 6.20. GCC package contains the GNU compiler collection, which
+# 6.21. GCC package contains the GNU compiler collection, which
 # includes the C and C++ compilers
 tar -xf /sources/gcc-*.tar.xz -C /tmp/ \
   && mv /tmp/gcc-* /tmp/gcc \

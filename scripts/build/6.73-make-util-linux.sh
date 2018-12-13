@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building Util-linux.."
-echo "Approximate build time: 1.0 SBU"
-echo "Required disk space: 189 MB"
+echo "Approximate build time: 1.1 SBU"
+echo "Required disk space: 200 MB"
 
 # 6.73. The Util-linux package contains miscellaneous utility programs. Among
 # them are utilities for handling file systems, consoles, partitions, and messages

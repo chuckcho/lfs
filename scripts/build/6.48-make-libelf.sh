@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 echo "Building Libelf.."
-echo "Approximate build time: 0.6 SBU"
-echo "Required disk space: 74 MB"
+echo "Approximate build time: 1.0 SBU"
+echo "Required disk space: 91 MB"
 
 # 6.48. Libelf is a library for handling ELF (Executable and Linkable
 # Format) files.

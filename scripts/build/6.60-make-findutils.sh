@@ -2,9 +2,9 @@
 set -e
 echo "Building findutils.."
 echo "Approximate build time: 0.7 SBU"
-echo "Required disk space: 49 MB"
+echo "Required disk space: 51 MB"
 
-# 6.53. Findutils package contains programs to find files
+# 6.60 Findutils package contains programs to find files
 tar -xf /sources/findutils-*.tar.gz -C /tmp/ \
   && mv /tmp/findutils-* /tmp/findutils \
   && pushd /tmp/findutils

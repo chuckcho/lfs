@@ -2,7 +2,7 @@
 set -e
 echo "Building Gzip.."
 echo "Approximate build time: 0.1 SBU"
-echo "Required disk space: 19 MB"
+echo "Required disk space: 20 MB"
 
 # 6.64. The Gzip package contains programs for compressing and
 # decompressing files.
